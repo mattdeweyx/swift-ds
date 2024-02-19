@@ -36,6 +36,7 @@ function formatASTData(tree) {
   const formattedData = [];
   const imports = {};
   // Traverse the tree recursively and extract the relevant information
+  console.log(tree.rootNode);
   traverseAST(tree.rootNode, formattedData, imports);
   return formattedData;
 }
